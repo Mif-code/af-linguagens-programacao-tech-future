@@ -1,0 +1,159 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Tech Future - Portal de Tecnologia e Inovação
+Aluno : Moises Ivanildo Ferreira - RA: 251553
+
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+*/
+
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-secundaria: #6610f2;
+    --cor-destaque: #00d4ff;
+    --cor-clara: #f8f9fa;
+    --cor-escura: #101522;
+    --cor-texto: #2d3340;
+    --sombra: 0 10px 30px rgba(16, 21, 34, 0.16);
+    --radius: 18px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cor-clara);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; }
+section { padding: 70px 0; }
+
+.navbar { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22); }
+.navbar-brand { font-weight: 800; letter-spacing: .5px; }
+.nav-link { font-weight: 600; }
+.nav-link:hover { color: var(--cor-destaque) !important; }
+
+.hero-carousel img { height: 560px; object-fit: cover; filter: brightness(55%); }
+.carousel-caption { background: rgba(0,0,0,.35); border-radius: var(--radius); padding: 22px; }
+.carousel-caption h2 { font-size: 2.6rem; font-weight: 800; }
+
+.titulo-gradiente {
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitulo { max-width: 760px; margin: 0 auto 35px; color: #616a7a; }
+
+.apresentacao-box,
+.info-contato,
+.form-card,
+.mapa-card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    padding: 32px;
+}
+
+.area-destaques,
+.footer-flex,
+.botoes-acoes,
+.redes-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-personalizado {
+    border: none;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: transform .3s ease, box-shadow .3s ease;
+    height: 100%;
+}
+.card-personalizado:hover,
+.card-destaque-js {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 16px 40px rgba(13, 110, 253, 0.22);
+}
+.card-personalizado img { height: 235px; object-fit: cover; transition: transform .4s ease; }
+.card-personalizado:hover img { transform: scale(1.08); }
+
+.badge-tech { background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria)); }
+.btn-gradiente {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 12px 24px;
+    transition: transform .3s ease, opacity .3s ease;
+}
+.btn-gradiente:hover { color: white; transform: translateY(-3px); opacity: .92; }
+
+.filtro-btn { border-radius: 999px; font-weight: 700; }
+.filtro-btn.ativo { background: var(--cor-primaria); color: #fff; }
+
+.form-control:focus,
+.form-select:focus { box-shadow: 0 0 0 .25rem rgba(13,110,253,.16); }
+
+iframe { width: 100%; min-height: 360px; border: 0; border-radius: var(--radius); }
+
+.rodape {
+    background: #090d18;
+    color: white;
+    padding: 38px 15px;
+}
+.rodape a { color: var(--cor-destaque); margin: 0 8px; }
+.footer-flex { justify-content: space-between; align-items: flex-start; }
+.footer-col { min-width: 250px; }
+
+.btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--sombra);
+}
+.btn-topo.mostrar { display: block; }
+
+.tema-escuro { background: #0b1020; color: #f5f7ff; }
+.tema-escuro .apresentacao-box,
+.tema-escuro .card-personalizado,
+.tema-escuro .info-contato,
+.tema-escuro .form-card,
+.tema-escuro .mapa-card { background: #151b2e; color: #f5f7ff; }
+.tema-escuro .subtitulo { color: #c8d0e0; }
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animado { animation: aparecer .8s ease both; }
+
+@media (max-width: 768px) {
+    body { padding-top: 68px; }
+    section { padding: 45px 0; }
+    .hero-carousel img { height: 420px; }
+    .carousel-caption h2 { font-size: 1.6rem; }
+    .footer-flex { justify-content: center; text-align: center; }
+}

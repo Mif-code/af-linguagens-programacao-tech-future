@@ -1,0 +1,143 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Tech Future - Portal de Tecnologia e Inovação
+Aluno: Moises Ivanildo Ferreira - RA: 251553
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Future - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tech Future</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                    <button id="btnTema" class="btn btn-outline-info btn-sm ms-lg-3 mt-3 mt-lg-0" type="button">Alternar tema</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero p-0">
+            <div id="carouselHome" class="carousel slide hero-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner-01.jpg" class="d-block w-100" alt="Tecnologia de inteligência artificial em destaque">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Inovação que conecta o futuro</h2>
+                            <p>Um portal moderno sobre tecnologia, inteligência artificial e transformação digital.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-02.jpg" class="d-block w-100" alt="Rede de conexão digital e tecnologia 5G">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Novidades em alta performance</h2>
+                            <p>Conheça tendências que impactam empresas, estudos e a vida cotidiana.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner-03.jpg" class="d-block w-100" alt="Segurança digital e proteção de dados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Segurança, dados e automação</h2>
+                            <p>Conteúdo organizado com HTML5, CSS3, Bootstrap e JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </section>
+
+        <section class="apresentacao animado">
+            <div class="container">
+                <div class="apresentacao-box text-center">
+                    <h1 class="titulo-gradiente">Tech Future</h1>
+                    <p class="lead">O Tech Future é um site fictício criado para apresentar lançamentos, tendências e soluções do universo tecnológico.</p>
+                    <p>O projeto foi desenvolvido com estrutura semântica, Bootstrap, CSS externo, Flexbox, responsividade e manipulação do DOM com JavaScript.</p>
+                    <a href="galeria.html" class="btn btn-gradiente mt-3">Ver novidades</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaques bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="titulo-gradiente">Destaques do projeto</h2>
+                    <p class="subtitulo">Cards informativos com recursos visuais, hover, transições e layout responsivo.</p>
+                </div>
+                <div class="row g-4 area-destaques">
+                    <article class="col-md-4">
+                        <div class="card card-personalizado">
+                            <div class="card-body">
+                                <span class="badge badge-tech mb-3">HTML5</span>
+                                <h3 class="h5">Estrutura semântica</h3>
+                                <p>Uso de header, nav, main, section, article e footer para organizar o conteúdo.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="card card-personalizado">
+                            <div class="card-body">
+                                <span class="badge badge-tech mb-3">CSS3</span>
+                                <h3 class="h5">Identidade visual</h3>
+                                <p>CSS externo único com variáveis, hover, animações, Flexbox e responsividade.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="card card-personalizado">
+                            <div class="card-body">
+                                <span class="badge badge-tech mb-3">JavaScript</span>
+                                <h3 class="h5">Interatividade real</h3>
+                                <p>Botão de topo, tema escuro, filtros de galeria e validação de formulário.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="chamada-contato text-center">
+            <div class="container">
+                <h2 class="titulo-gradiente">Quer falar com a equipe?</h2>
+                <p class="subtitulo">Acesse a página de contato, preencha o formulário e veja nosso endereço fictício no mapa.</p>
+                <a href="contato.html" class="btn btn-gradiente">Ir para contato</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container footer-flex">
+            <div class="footer-col"><h3 class="h5">Tech Future</h3><p>Projeto acadêmico sem fins comerciais.</p></div>
+            <div class="footer-col"><p>Moises Ivanildo Ferreira - RA: 251553</p><p>Turma: 3º Semestre | Linguagens de Programação | 2026</p></div>
+            <div class="footer-col"><a href="index.html">Home</a><a href="galeria.html">Galeria</a><a href="contato.html">Contato</a><p class="mt-2">&copy; 2026 - Todos os direitos fictícios.</p></div>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" type="button" aria-label="Voltar ao topo">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
