@@ -45,6 +45,7 @@ Site fictício sobre tecnologia, inovação, inteligência artificial, robótica
 │   ├── banner-01.jpg
 │   ├── banner-02.jpg
 │   ├── banner-03.jpg
+│   ├── banner-04.jpg
 │   ├── galeria-01.jpg
 │   ├── galeria-02.jpg
 │   ├── galeria-03.jpg
@@ -55,4 +56,4 @@ Site fictício sobre tecnologia, inovação, inteligência artificial, robótica
 ```
 
 ## Link do Repositório
-Inserir aqui o link do GitHub após criar o repositório público.
+link do GitHub [após criar o repositório público.](https://github.com/Mif-code/af-linguagens-programacao-tech-future)
