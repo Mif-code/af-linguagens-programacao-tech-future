@@ -328,3 +328,9 @@ iframe {
     background: rgba(13, 110, 253, 0.25);
     color: #111;
 }
+
+/* Ajuste final de seleção de texto */
+::selection {
+    background: rgba(13, 110, 253, 0.25);
+    color: #111;
+}
