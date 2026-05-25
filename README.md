@@ -20,7 +20,7 @@ Site fictício sobre tecnologia, inovação, inteligência artificial, robótica
 
 ## Funcionalidades
 - Menu responsivo com Bootstrap Navbar
-- Carrossel Bootstrap com 3 imagens
+- Carrossel Bootstrap com 4 imagens
 - Galeria de imagens com cards
 - Filtros por categoria na galeria usando JavaScript
 - Formulário de contato com validações HTML5
